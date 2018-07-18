@@ -787,6 +787,15 @@ public class PlayerView extends FrameLayout {
     return subtitleView;
   }
 
+  /**
+   * Gets the {@link PlayerControlView}
+   *
+   * @return the {@link PlayerControlView}
+   */
+  public PlayerControlView getController() {
+    return controller;
+  }
+
   @Override
   public boolean onTouchEvent(MotionEvent ev) {
     if (!useController || player == null || ev.getActionMasked() != MotionEvent.ACTION_DOWN) {
