@@ -28,7 +28,7 @@ public final class ChunkedTrackBlacklistUtil {
   /**
    * The default duration for which a track is blacklisted in milliseconds.
    */
-  public static final long DEFAULT_TRACK_BLACKLIST_MS = 15000;
+  public static final long DEFAULT_TRACK_BLACKLIST_MS = 10;
 
   private static final String TAG = "ChunkedTrackBlacklist";
 
