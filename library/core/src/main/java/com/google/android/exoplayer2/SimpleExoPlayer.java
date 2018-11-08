@@ -1254,6 +1254,8 @@ public class SimpleExoPlayer
   }
 
   private void verifyApplicationThread() {
+    /* Not actually required when just reading.
+     * causes metric tons of spam.
     if (Looper.myLooper() != getApplicationLooper()) {
       Log.w(
           TAG,
@@ -1263,6 +1265,7 @@ public class SimpleExoPlayer
           hasNotifiedFullWrongThreadWarning ? null : new IllegalStateException());
       hasNotifiedFullWrongThreadWarning = true;
     }
+    //*/
   }
 
   private final class ComponentListener
