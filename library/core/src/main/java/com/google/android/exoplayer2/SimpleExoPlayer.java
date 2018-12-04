@@ -1186,6 +1186,7 @@ public class SimpleExoPlayer extends BasePlayer
   }
 
   private void verifyApplicationThread() {
+    /*
     if (Looper.myLooper() != getApplicationLooper()) {
       Log.w(
           TAG,
@@ -1195,6 +1196,7 @@ public class SimpleExoPlayer extends BasePlayer
           hasNotifiedFullWrongThreadWarning ? null : new IllegalStateException());
       hasNotifiedFullWrongThreadWarning = true;
     }
+    //*/
   }
 
   private final class ComponentListener
