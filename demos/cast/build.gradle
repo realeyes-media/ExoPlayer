@@ -16,7 +16,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion project.ext.compileSdkVersion
-    buildToolsVersion '28.0.3'
+    buildToolsVersion project.ext.buildToolsVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -52,6 +52,12 @@ android {
 }
 
 dependencies {
+    implementation project(modulePrefix + 'library-core')
+    implementation project(modulePrefix + 'library-dash')
+    implementation project(modulePrefix + 'library-hls')
+    implementation project(modulePrefix + 'library-smoothstreaming')
+    implementation project(modulePrefix + 'library-ui')
+    implementation project(modulePrefix + 'extension-cast')
     implementation 'com.android.support:support-v4:' + supportLibraryVersion
     implementation 'com.android.support:appcompat-v7:' + supportLibraryVersion
     implementation 'com.android.support:recyclerview-v7:' + supportLibraryVersion

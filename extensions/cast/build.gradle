@@ -16,7 +16,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion project.ext.compileSdkVersion
-    buildToolsVersion '28.0.3'
+    buildToolsVersion project.ext.buildToolsVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -32,9 +32,13 @@ android {
 
 dependencies {
     api 'com.google.android.gms:play-services-cast-framework:16.0.3'
+    implementation project(modulePrefix + 'library-core')
+    implementation project(modulePrefix + 'library-ui')
+    testImplementation project(modulePrefix + 'testutils')
     testImplementation 'junit:junit:' + junitVersion
     testImplementation 'org.mockito:mockito-core:' + mockitoVersion
     testImplementation 'org.robolectric:robolectric:' + robolectricVersion
+    testImplementation project(modulePrefix + 'testutils-robolectric')
     // These dependencies are necessary to force the supportLibraryVersion of
     // com.android.support:support-v4, com.android.support:appcompat-v7 and
     // com.android.support:mediarouter-v7 to be used. Else older versions are
