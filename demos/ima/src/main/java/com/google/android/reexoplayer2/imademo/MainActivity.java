@@ -18,7 +18,6 @@ package com.google.android.reexoplayer2.imademo;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.google.android.exoplayer2.imademo.R;
 import com.google.android.reexoplayer2.ExoPlayer;
 import com.google.android.reexoplayer2.ui.PlayerView;
 

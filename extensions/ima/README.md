@@ -58,7 +58,7 @@ playback.
 
 ## Links ##
 
-* [Javadoc][]: Classes matching `com.google.android.exoplayer2.ext.ima.*`
+* [Javadoc][]: Classes matching `com.google.android.reexoplayer2.ext.ima.*`
   belong to this module.
 
 [Javadoc]: https://google.github.io/ExoPlayer/doc/reference/index.html

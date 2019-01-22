@@ -43,7 +43,7 @@ import org.junit.runner.RunWith;
 @RunWith(AndroidJUnit4.class)
 public final class ContentDataSourceTest {
 
-  private static final String AUTHORITY = "com.google.android.exoplayer2.core.test";
+  private static final String AUTHORITY = "com.google.android.reexoplayer2.core.test";
   private static final String DATA_PATH = "binary/1024_incrementing_bytes.mp3";
 
   @Test

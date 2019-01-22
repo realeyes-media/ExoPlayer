@@ -50,7 +50,7 @@ doesn't need to handle any other protocols, you can update any `DataSource`s and
 
 ## Links ##
 
-* [Javadoc][]: Classes matching `com.google.android.exoplayer2.ext.rtmp.*`
+* [Javadoc][]: Classes matching `com.google.android.reexoplayer2.ext.rtmp.*`
   belong to this module.
 
 [Javadoc]: https://google.github.io/ExoPlayer/doc/reference/index.html

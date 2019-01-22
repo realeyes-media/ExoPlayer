@@ -33,7 +33,7 @@ import java.io.IOException;
 /**
  * A {@link MediaSource} that inserts ads linearly with a provided content media source.
  *
- * @deprecated Use com.google.android.exoplayer2.source.ads.AdsMediaSource with ImaAdsLoader.
+ * @deprecated Use com.google.android.reexoplayer2.source.ads.AdsMediaSource with ImaAdsLoader.
  */
 @Deprecated
 public final class ImaAdsMediaSource extends BaseMediaSource implements SourceInfoRefreshListener {

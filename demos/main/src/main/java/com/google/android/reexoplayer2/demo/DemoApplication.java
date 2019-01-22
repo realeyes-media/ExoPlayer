@@ -17,7 +17,7 @@ package com.google.android.reexoplayer2.demo;
 
 import android.app.Application;
 
-import com.google.android.exoplayer2.demo.BuildConfig;
+import com.google.android.reexoplayer2.demo.BuildConfig;
 import com.google.android.reexoplayer2.offline.DownloadManager;
 import com.google.android.reexoplayer2.offline.DownloaderConstructorHelper;
 import com.google.android.reexoplayer2.upstream.DataSource;

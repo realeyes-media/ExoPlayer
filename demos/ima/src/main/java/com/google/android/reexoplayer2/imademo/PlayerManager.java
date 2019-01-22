@@ -18,7 +18,6 @@ package com.google.android.reexoplayer2.imademo;
 import android.content.Context;
 import android.net.Uri;
 
-import com.google.android.exoplayer2.imademo.R;
 import com.google.android.reexoplayer2.C;
 import com.google.android.reexoplayer2.C.ContentType;
 import com.google.android.reexoplayer2.ExoPlayer;

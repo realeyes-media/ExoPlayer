@@ -28,7 +28,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.google.android.exoplayer2.demo.R;
 import com.google.android.reexoplayer2.C;
 import com.google.android.reexoplayer2.offline.ActionFile;
 import com.google.android.reexoplayer2.offline.DownloadAction;

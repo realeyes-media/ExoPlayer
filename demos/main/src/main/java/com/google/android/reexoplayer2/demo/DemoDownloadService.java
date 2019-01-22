@@ -17,7 +17,6 @@ package com.google.android.reexoplayer2.demo;
 
 import android.app.Notification;
 
-import com.google.android.exoplayer2.demo.R;
 import com.google.android.reexoplayer2.offline.DownloadManager;
 import com.google.android.reexoplayer2.offline.DownloadManager.TaskState;
 import com.google.android.reexoplayer2.offline.DownloadService;

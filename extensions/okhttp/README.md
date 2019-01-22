@@ -58,7 +58,7 @@ respectively.
 
 ## Links ##
 
-* [Javadoc][]: Classes matching `com.google.android.exoplayer2.ext.okhttp.*`
+* [Javadoc][]: Classes matching `com.google.android.reexoplayer2.ext.okhttp.*`
   belong to this module.
 
 [Javadoc]: https://google.github.io/ExoPlayer/doc/reference/index.html

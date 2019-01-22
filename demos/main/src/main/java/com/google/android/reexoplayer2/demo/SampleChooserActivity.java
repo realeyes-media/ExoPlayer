@@ -37,7 +37,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.exoplayer2.demo.R;
 import com.google.android.reexoplayer2.ParserException;
 import com.google.android.reexoplayer2.offline.DownloadService;
 import com.google.android.reexoplayer2.upstream.DataSource;

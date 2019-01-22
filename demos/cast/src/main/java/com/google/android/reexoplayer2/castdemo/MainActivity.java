@@ -34,7 +34,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.android.exoplayer2.castdemo.R;
 import com.google.android.reexoplayer2.C;
 import com.google.android.reexoplayer2.SimpleExoPlayer;
 import com.google.android.reexoplayer2.castdemo.DemoUtil.Sample;
