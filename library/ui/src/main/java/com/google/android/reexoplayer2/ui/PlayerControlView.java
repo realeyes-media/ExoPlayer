@@ -89,14 +89,14 @@ import java.util.Locale;
  *       below for more details.
  *       <ul>
  *         <li>Corresponding method: None
- *         <li>Default: {@code R.layout.exo_player_control_view}
+ *         <li>Default: {@code R.layout.reexo_player_control_view}
  *       </ul>
  * </ul>
  *
  * <h3>Overriding the layout file</h3>
  *
  * To customize the layout of PlayerControlView throughout your app, or just for certain
- * configurations, you can define {@code exo_player_control_view.xml} layout files in your
+ * configurations, you can define {@code reexo_player_control_viewew.xml} layout files in your
  * application {@code res/layout*} directories. These layouts will override the one provided by the
  * ExoPlayer library, and will be inflated for use by PlayerControlView. The view identifies and
  * binds its children by looking for the following ids:
@@ -155,11 +155,11 @@ import java.util.Locale;
  *
  * <h3>Specifying a custom layout file</h3>
  *
- * Defining your own {@code exo_player_control_view.xml} is useful to customize the layout of
+ * Defining your own {@code reexo_player_control_view.xmlml} is useful to customize the layout of
  * PlayerControlView throughout your application. It's also possible to customize the layout for a
  * single instance in a layout file. This is achieved by setting the {@code controller_layout_id}
  * attribute on a PlayerControlView. This will cause the specified layout to be inflated instead of
- * {@code exo_player_control_view.xml} for only the instance on which the attribute is set.
+ * {@code reexo_player_control_viewew.xml} for only the instance on which the attribute is set.
  */
 public class PlayerControlView extends FrameLayout {
 
@@ -254,7 +254,7 @@ public class PlayerControlView extends FrameLayout {
   public PlayerControlView(
       Context context, AttributeSet attrs, int defStyleAttr, AttributeSet playbackAttrs) {
     super(context, attrs, defStyleAttr);
-    int controllerLayoutId = R.layout.exo_player_control_view;
+    int controllerLayoutId = R.layout.reexo_player_control_view;
     rewindMs = DEFAULT_REWIND_MS;
     fastForwardMs = DEFAULT_FAST_FORWARD_MS;
     showTimeoutMs = DEFAULT_SHOW_TIMEOUT_MS;
@@ -296,41 +296,41 @@ public class PlayerControlView extends FrameLayout {
     LayoutInflater.from(context).inflate(controllerLayoutId, this);
     setDescendantFocusability(FOCUS_AFTER_DESCENDANTS);
 
-    durationView = findViewById(R.id.exo_duration);
-    positionView = findViewById(R.id.exo_position);
-    timeBar = findViewById(R.id.exo_progress);
+    durationView = findViewById(R.id.reexo_duration);
+    positionView = findViewById(R.id.reexo_position);
+    timeBar = findViewById(R.id.reexo_progress);
     if (timeBar != null) {
       timeBar.addListener(componentListener);
     }
-    playButton = findViewById(R.id.exo_play);
+    playButton = findViewById(R.id.reexo_play);
     if (playButton != null) {
       playButton.setOnClickListener(componentListener);
     }
-    pauseButton = findViewById(R.id.exo_pause);
+    pauseButton = findViewById(R.id.reexo_pause);
     if (pauseButton != null) {
       pauseButton.setOnClickListener(componentListener);
     }
-    previousButton = findViewById(R.id.exo_prev);
+    previousButton = findViewById(R.id.reexo_prev);
     if (previousButton != null) {
       previousButton.setOnClickListener(componentListener);
     }
-    nextButton = findViewById(R.id.exo_next);
+    nextButton = findViewById(R.id.reexo_next);
     if (nextButton != null) {
       nextButton.setOnClickListener(componentListener);
     }
-    rewindButton = findViewById(R.id.exo_rew);
+    rewindButton = findViewById(R.id.reexo_rew);
     if (rewindButton != null) {
       rewindButton.setOnClickListener(componentListener);
     }
-    fastForwardButton = findViewById(R.id.exo_ffwd);
+    fastForwardButton = findViewById(R.id.reexo_ffwd);
     if (fastForwardButton != null) {
       fastForwardButton.setOnClickListener(componentListener);
     }
-    repeatToggleButton = findViewById(R.id.exo_repeat_toggle);
+    repeatToggleButton = findViewById(R.id.reexo_repeat_toggle);
     if (repeatToggleButton != null) {
       repeatToggleButton.setOnClickListener(componentListener);
     }
-    shuffleButton = findViewById(R.id.exo_shuffle);
+    shuffleButton = findViewById(R.id.reexo_shuffle);
     if (shuffleButton != null) {
       shuffleButton.setOnClickListener(componentListener);
     }
