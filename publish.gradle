@@ -30,3 +30,22 @@ def getBintrayRepo() {
         property('publicRepo').toBoolean()
     return publicRepo ? 'exoplayer' : 'exoplayer-test'
 }
+
+def realeyesVersion = releaseVersion
+
+project.ext {
+    artifactoryRepo = realeyesVersion.toString().contains('SNAPSHOT') ? 'maven-snapshots' : 'maven-releases'
+}
+
+publishing {
+//    publications {
+//        mavenAar(MavenPublication) {
+//            from components.android
+//        }
+//    }
+    repositories {
+        maven {
+            url "${reMavenBase}/${artifactoryRepo}"
+        }
+    }
+}
